@@ -14,4 +14,4 @@ app.use(session({
     saveUninitialized:true
 }))
 
-app.listen(8080,()=>{});
+app.listen(80,()=>{});
