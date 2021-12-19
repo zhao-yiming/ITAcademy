@@ -3,7 +3,7 @@ const coursModel = require('../models/courModel');
 var connection=mysql.createConnection({
     host:'localhost',
     user:'root',
-    password:'root',
+    password:'AAaa@@11',
     database:'cours'
 });
 connection.connect(function(error){if(error)console.log(error)});
