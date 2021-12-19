@@ -1,0 +1,14 @@
+table{
+    width:50%;
+}
+
+table,th, td {
+    border:1px solid black;
+}
+form{
+    display: inline;
+}
+
+h1{
+    padding-left: 13%;
+}

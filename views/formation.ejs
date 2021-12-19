@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+    <h1>IT ACADEMY</h1>
+    <h2>Formations disponibles</h2>
+    
+    <form action="/consult" method="POST">
+        <input type="submit" name='voirPanier' value='voir le panier'/>
+    </form>
+
+    <form action="/connect" method="POST">
+        <input type="submit" name='connect' value='connexion'/><br/><br/>
+    </form>
+
+    <table>
+        <tr>
+            <td>id</td>
+            <td>nom</td>
+            <td>prix</td>
+            <td>Début</td>
+            <td>fin</td>
+            <td></td>
+        </tr>
+        <% for(let i=0;i<cours.length;i++){%>
+        <tr>
+            <td><%= cours[i].id %></td>
+            <td><%= cours[i].nom %></td>
+            <td><%= cours[i].prix %></td>
+            <td><%= cours[i].debut %></td>
+            <td><%= cours[i].fin %></td>
+            <td><a href="/cours/inscrire/<%=cours[i].id%>">s'inscrire</a></td>
+        </tr> 
+        <%}%>
+    </table>
+</body>
+</html>
